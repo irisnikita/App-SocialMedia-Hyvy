@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                android:id="@+id/avatarIv"
+                android:layout_marginTop="10px"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_useravatar"
+                />
+
+            <RelativeLayout
+                android:id="@+id/bg_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/avatarIv"
+                android:background="@drawable/bg_comment"
+                android:padding="10px"
+                android:layout_marginRight="10px"
+                android:layout_marginBottom="10px">
+                <TextView
+                    android:layout_marginTop="10px"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/nameTv"
+                    android:text="Coo to" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nameTv"
+                    android:layout_width="match_parent"
+                    android:id="@+id/commentTv"
+                    android:text="This is no thing is here" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bg_comment"
+                android:layout_width="match_parent"
+                android:id="@+id/timeTv"
+                android:text="11/12/2019"
+                android:layout_marginBottom="10px"/>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
